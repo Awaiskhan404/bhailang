@@ -208,20 +208,3 @@ test("whileStatement test with nested loops - 6, should success", () => {
   expect(console.log).toHaveBeenCalledWith("2 baar hi chapunga");
   expect(console.log).toHaveBeenCalledWith("2 baar hi chapunga");
 });
-
-// test("jest", () => {
-//     interpreter.interpret(`
-//     hi bhai
-//     bhai ye hai a = 0;
-//     jab tak bhai (a < 10) {
-//       bol bhai a;
-//       a += 1;
-//       agar bhai (a == 3) {
-//         bas kar bhai;
-//       }
-//       bol bhai "2 baar hi chapunga";
-//     }
-//     bol bhai "done";
-//     bye bhai
-//     `);
-// });

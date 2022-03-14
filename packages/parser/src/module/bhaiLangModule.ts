@@ -148,25 +148,20 @@ export default class BhaiLangModule {
 
     return this._whileStatement;
   }
-
   static getExpressionStatement() {
     if (!this._expresionStatement) {
       this._expresionStatement = new ExpressionStatement(
         this.getTokenExecutor()
       );
     }
-
     return this._expresionStatement;
   }
-
   static getEmptyStatement() {
     if (!this._emptyStatement) {
       this._emptyStatement = new EmptyStatement(this.getTokenExecutor());
     }
-
     return this._emptyStatement;
   }
-
   static getBlockStatement() {
     if (!this._blockStatement) {
       this._blockStatement = new BlockStatement(
@@ -174,149 +169,116 @@ export default class BhaiLangModule {
         this.getStatementList()
       );
     }
-
     return this._blockStatement;
   }
-
   static getVariableStatement() {
     if (!this._variableStatement)
       this._variableStatement = new VariableStatement(
         this.getTokenExecutor(),
         this.getNullLiteral()
       );
-
     return this._variableStatement;
   }
-
   static getAdditiveExpression() {
     if (!this._additiveExpression) {
       this._additiveExpression = new AdditiveExpression(
         this.getTokenExecutor()
       );
     }
-
     return this._additiveExpression;
   }
-
   static getMultiplicativeExpression() {
     if (!this._multiplicativeExpression) {
       this._multiplicativeExpression = new MultiplicativeExpression(
         this.getTokenExecutor()
       );
     }
-
     return this._multiplicativeExpression;
   }
-
   static getPrimaryExpression() {
     if (!this._primaryExpression) {
       this._primaryExpression = new PrimaryExpression(this.getTokenExecutor());
     }
-
     return this._primaryExpression;
   }
-
   static getParanthesizedExpression() {
     if (!this._paranthesizedExpression) {
       this._paranthesizedExpression = new ParanthesizedExpression(
         this.getTokenExecutor()
       );
     }
-
     return this._paranthesizedExpression;
   }
-
   static getIndentifierExpression() {
     if (!this._idetifierExpression)
       this._idetifierExpression = new IdentifierExpression(
         this.getTokenExecutor()
       );
-
     return this._idetifierExpression;
   }
-
   static getEqualityExpression() {
     if (!this._equalityExpression)
       this._equalityExpression = new EqualityExpression(
         this.getTokenExecutor()
       );
-
     return this._equalityExpression;
   }
-
   static getLogicalANDExpression() {
     if (!this._logicalANDExpression)
       this._logicalANDExpression = new LogicalANDExpression(
         this.getTokenExecutor()
       );
-
     return this._logicalANDExpression;
   }
-
   static getLogicalORExpression() {
     if (!this._logicalORExpression)
       this._logicalORExpression = new LogicalORExpression(
         this.getTokenExecutor()
       );
-
     return this._logicalORExpression;
   }
-
   static getRelationalExpression() {
     if (!this._relationalExpression)
       this._relationalExpression = new RelationalExpression(
         this.getTokenExecutor()
       );
-
     return this._relationalExpression;
   }
-
   static getAssignmentExpression() {
     if (!this._assignmentExpression)
       this._assignmentExpression = new AssignmentExpression(
         this.getTokenExecutor()
       );
-
     return this._assignmentExpression;
   }
-
   static getNumericLiteral() {
     if (!this._numericLiteral) {
       this._numericLiteral = new NumericLiteral(this.getTokenExecutor());
     }
-
     return this._numericLiteral;
   }
-
   static getStringLiteral() {
     if (!this._stringLiteral) {
       this._stringLiteral = new StringLiteral(this.getTokenExecutor());
     }
     return this._stringLiteral;
   }
-
   static getBooleanLiteral() {
     if (!this._booleanLiteral) {
       this._booleanLiteral = new BooleanLiteral(this.getTokenExecutor());
     }
-
     return this._booleanLiteral;
   }
-
   static getNullLiteral() {
     if (!this._nullLiteral) {
       this._nullLiteral = new NullLiteral(this.getTokenExecutor());
     }
-
     return this._nullLiteral;
   }
-
   static getProgram() {
     if (!this._program) this._program = new Program(this.getStatementList());
-
     return this._program;
   }
-
   static getParser() {
     if (!this._parser)
       this._parser = new Parser(
@@ -324,7 +286,6 @@ export default class BhaiLangModule {
         this.getProgram(),
         this.getTokenExecutor()
       );
-
     return this._parser;
   }
 }
