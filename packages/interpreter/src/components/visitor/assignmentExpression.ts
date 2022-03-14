@@ -1,6 +1,5 @@
 import Visitor from '.';
 import { ASTNode } from 'bhai-lang-parser';
-
 import InvalidStateException from '../../exceptions/invalidStateException';
 import NallaPointerException from '../../exceptions/nallaPointerException';
 import RuntimeException from '../../exceptions/runtimeException';
